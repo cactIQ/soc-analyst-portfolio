@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Runs before every commit. Blocks the commit if the scanner finds a likely secret.
+# Enable once per clone:  git config core.hooksPath .githooks
+set -euo pipefail
+python3 tools/secret_scan.py --staged

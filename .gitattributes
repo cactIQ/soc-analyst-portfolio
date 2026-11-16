@@ -1,0 +1,10 @@
+# Force LF line endings so scripts work in WSL/Linux even if edited on Windows.
+* text=auto eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.png binary
+*.jpg binary
+*.gif binary
+*.pdf binary
+*.zip binary
+*.evtx binary
